@@ -2,10 +2,6 @@
 members = [
     "node",
     "pallets/template",
-    "pallets/simple-pallet",
-    "pallets/use-storage",
-    "pallets/event-error",
-    "pallets/hooks",
     "runtime",
 ]
 [profile.release]
