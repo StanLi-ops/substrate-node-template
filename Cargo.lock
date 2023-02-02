@@ -2241,6 +2241,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "hooks"
+version = "4.0.0-dev"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+]
+
+[[package]]
 name = "hostname"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3685,7 +3700,6 @@ dependencies = [
 name = "node-template-runtime"
 version = "4.0.0-dev"
 dependencies = [
- "event-error",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
@@ -3693,6 +3707,7 @@ dependencies = [
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
  "frame-try-runtime",
+ "hooks",
  "pallet-aura",
  "pallet-balances",
  "pallet-grandpa",

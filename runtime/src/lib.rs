@@ -286,7 +286,11 @@ impl pallet_sudo::Config for Runtime {
 
 // impl use_storage::Config for Runtime{}
 
-impl event_error::Config for Runtime{
+// impl event_error::Config for Runtime{
+// 	type RuntimeEvent = RuntimeEvent;
+// }
+
+impl hooks::Config for Runtime{
 	type RuntimeEvent = RuntimeEvent;
 }
 
@@ -310,7 +314,8 @@ construct_runtime!(
 		// TemplateModule: pallet_template,
 		// SimplePallet: simple_pallet,
 		// UseStorage: use_storage,
-		EventError: event_error,
+		// EventError: event_error,
+		Hooks: hooks,
 	}
 );
 
