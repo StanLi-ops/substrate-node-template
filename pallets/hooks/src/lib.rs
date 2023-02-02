@@ -35,10 +35,10 @@ pub mod pallet {
 	#[pallet::hooks]
 	impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 		fn on_finalize(n: BlockNumberFor<T>) {
-			log::info!(traget: "hooks","---------- on_finalize, block number is {:?}",n);
+			log::info!(target: "hooks","---------- on_finalize, block number is {:?}",n);
 		}
 		fn on_initialize(n: BlockNumberFor<T>) -> Weight {
-			log::info!(traget: "hooks","++++++++++ on_initialize, block number is {:?}",n);
+			log::info!(target: "hooks","++++++++++ on_initialize, block number is {:?}",n);
 			Weight::zero()
 		}
 	}
